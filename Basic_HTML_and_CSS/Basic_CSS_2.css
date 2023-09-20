@@ -1,0 +1,13 @@
+p {
+    background-color: black;
+    color: white;
+    font-weight: 30pt;
+    text-align: center;
+    
+}
+
+.drop_shadow_text {
+    background-color: white;
+    color: black;
+    text-shadow: 2pt 2pt 5pt gray;
+}
