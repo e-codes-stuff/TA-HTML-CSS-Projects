@@ -1,0 +1,67 @@
+p,
+h1,
+h2,
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 16pt;
+}
+
+section {
+    display: grid;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.image-container {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.image-container p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button input {
+    background-color: #e1edff;
+    border: 2px solid #d5e6ff;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+    width: 70%;
+    height: 2em;
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+    margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+    border: 2px solid #54477e;
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+    border-radius: 2px;
+}
+
+footer p {
+    text-align: end;
+}
