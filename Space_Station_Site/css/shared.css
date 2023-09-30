@@ -85,6 +85,9 @@ p {
 section {
     padding-top: 50px;
     margin-top: 50px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
 }
 
 .navbar {
@@ -130,11 +133,7 @@ section {
     max-height: 340px;
     margin: 0% auto;
     content: " ";
-    /* top: 0; */
-    /* left: 0;  */
-    /* to the top edge of the screen */
-    /* position: absolute; */
-    /* width: 100; */
+    width: 100%;
     position: center;
     z-index: 100;
     /* background-color: rgba(255, 255, 255, 0.5);*/
@@ -149,7 +148,8 @@ section {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    display: block;
+    display: grid;
+    justify-content: center;
     height: auto;
     /* This is spacer before the Main title Logo */
     padding-top: 350px;
