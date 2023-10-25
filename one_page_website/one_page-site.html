@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Frog Site</title>
-    <link rel="stylesheet" href="css/one_page_website.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Frog Site</title>
+        <link rel="stylesheet" href="css/one_page_website.css">
+        <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -25,21 +26,28 @@
             <a href="#contact">Contact</a>
         </nav>
     </section>
+    
+    <!-- The lightbox modal -->
+    <div id="myModal" class="lightbox">
+        <span class="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="modal-image" src="" alt="">
+        <p id="caption"></p>
+    </div>
 
     <section id="gallery">
         <h1>Images of some frogs</h1>
         <div class="image-gallery">
 
             <div class="image-container">
-                <img src="images/frog_1.jpg" alt="A brown frog">
+                <img src="images/frog_1.jpg" alt="A brown frog" onclick="openLightbox('images/frog_1.jpg', 'The Brown Frog')">
                 <p>The Brown Frog</p>
             </div>
             <div class="image-container">
-                <img src="images/frog_2.jpg" alt="A red-eyed tree frog">
+                <img src="images/frog_2.jpg" alt="A red-eyed tree frog" onclick="openLightbox('images/frog_2.jpg', 'The Red-Eyed Tree Frog')">
                 <p>The Red-Eyed Tree Frog</p>
             </div>
             <div class="image-container">
-                <img src="images/frog_3.jpg" alt="A golden tree frog">
+                <img src="images/frog_3.jpg" alt="A golden tree frog" onclick="openLightbox('images/frog_3.jpg', 'The Golden Tree Frog')">
                 <p>The Golden Tree Frog</p>
             </div>
 
