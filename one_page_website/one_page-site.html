@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <title>Frog Site</title>
-        <link rel="stylesheet" href="css/one_page_website.css">
-        <script src="js/main.js" defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frog Site</title>
+    <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -26,33 +26,69 @@
             <a href="#contact">Contact</a>
         </nav>
     </section>
-    
-    <!-- The lightbox modal -->
-    <div id="myModal" class="lightbox">
-        <span class="close-button" onclick="closeLightbox()">&times;</span>
-        <img id="modal-image" src="" alt="">
-        <p id="caption"></p>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/frog_1.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/frog_2.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/frog_3.jpg">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="images/frog_1.jpg" onclick="currentSlide(1)" alt="The Brown Frog">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/frog_2.jpg" onclick="currentSlide(2)" alt="The Red-Eyed Tree Frog">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/frog_3.jpg" onclick="currentSlide(3)" alt="The Golden Tree Frog">
+            </div>
+        </div>
     </div>
 
     <section id="gallery">
         <h1>Images of some frogs</h1>
         <div class="image-gallery">
-
             <div class="image-container">
-                <img src="images/frog_1.jpg" alt="A brown frog" onclick="openLightbox('images/frog_1.jpg', 'The Brown Frog')">
+                <img src="images/frog_1.jpg" alt="A brown frog" onclick="openLightbox(0)">
                 <p>The Brown Frog</p>
             </div>
             <div class="image-container">
-                <img src="images/frog_2.jpg" alt="A red-eyed tree frog" onclick="openLightbox('images/frog_2.jpg', 'The Red-Eyed Tree Frog')">
+                <img src="images/frog_2.jpg" alt="A red-eyed tree frog" onclick="openLightbox(1)">
                 <p>The Red-Eyed Tree Frog</p>
             </div>
             <div class="image-container">
-                <img src="images/frog_3.jpg" alt="A golden tree frog" onclick="openLightbox('images/frog_3.jpg', 'The Golden Tree Frog')">
+                <img src="images/frog_3.jpg" alt="A golden tree frog" onclick="openLightbox(2)">
                 <p>The Golden Tree Frog</p>
             </div>
-
         </div>
     </section>
+
 
     <section id="video">
         <h3>Frog Video</h3>
