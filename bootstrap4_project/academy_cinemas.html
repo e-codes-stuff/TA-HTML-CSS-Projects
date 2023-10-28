@@ -88,12 +88,12 @@
                         <p>In the near future, Major Mila Killian is the first of her kind:
                             a human saved from a terrible crash, who is cyber—enhanced to be a perfect soldier
                             devoted to stopping the world's most dangerous criminals.</p>
-                            <span class="badge badge-pill badge-info">12:00 p.m.</span>
-                            <span class="badge badge-pill badge-info">1:30 p.m.</span>
-                            <span class="badge badge-pill badge-info">3:00 p.m.</span>
-                            <span class="badge badge-pill badge-info">5:30 p.m.</span>
-                            <span class="badge badge-pill badge-info">7:00 p.m.</span>
-                            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+                        <span class="badge badge-pill badge-info">12:00 p.m.</span>
+                        <span class="badge badge-pill badge-info">1:30 p.m.</span>
+                        <span class="badge badge-pill badge-info">3:00 p.m.</span>
+                        <span class="badge badge-pill badge-info">5:30 p.m.</span>
+                        <span class="badge badge-pill badge-info">7:00 p.m.</span>
+                        <span class="badge badge-pill badge-info">9:30 p.m.</span>
                     </div>
                 </div>
 
@@ -114,9 +114,58 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
+        <!-- Jumbotron heading -->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down"
+                    style="color: #FFF; font-family: roboto; font-weight: 900; text-transform: uppercase;">
+                    Movie Deals
+                </h1>
+                <p class="lead">Check out our monthly deals...</p>
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register"
+                    class="btn btn-outline-primary">See
+                    our monthly movie deals!</button>
+                <!-- My popover element -->
+                <div class="container my-2">
+                    <button type="button" class="btn btn-outline-primary" data-toggle="popover" data-trigger="hover"
+                        data-content="Registration will sign you up to receive emails about our upcoming shows!">
+                        What's This?</button>
+                </div>
+            </div>
+        </div>
+        <!-- /Jumbotron heading -->
+
+        <!-- Modal form -->
+        <div class="modal fade" id="register">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register to receive movie deals...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="modalEmail" placeholder="Enter email">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal form -->
+
+        <!-- Signup form -->
         <div class="text-center" id="deals">
             <form action="">
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
@@ -126,6 +175,7 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+        <!-- /Signup form -->
 
         <div class="container">
             <ul class="nav nav-inline">
@@ -154,6 +204,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </body>
 
 </html>
